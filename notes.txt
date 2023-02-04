@@ -1,0 +1,131 @@
+				java
+
+
+J2SE			J2EE JEE [ technology ] 		   
+core java		webapp 	jsp-servlet 
+
+
+website -> collections of webpages -> webpage --> collection of HTML tag 			
+
+
+HTML -> static web page -> 
+
+		create -- > load -> WYSWYG
+
+	HTML
+		CSS 
+		JS 
+		Data : DataBase 
+
+
+webpage --  HTML+CSS+JS --> database ? 
+
+PL => Database [ jdbc ] 
+
+Java[database]+HTML+CSS+JS ==> Dynamic WebPage
+
+J2EE 
+--------------------------------------
+java+database ==> BackEnd ==> Struts struts2.0 Spring***  
+HTML+CSS+Js   ==> FrontEnd ==> Vue AngularJs Angular React
+
+
+BackEnd + FrontEnd => Fullstack*** 
+
+------------------------------------------------------
+
+webapp ->  HTTP 
+
+
+client : user 
+server : webapp/db 
+
+
+client --- request  --> server 
+server --- response --> client 
+
+2 tier application 
+
+
+client 
+server : webapp 
+dbServer :database 
+
+3 tier application 
+
+
+		client:
+	server:webapp	server:webapp 
+dbServer:database	dbServeR:Database 
+ 
+nTier Application 
+
+
+
+
+
+------------------------------------------------------
+
+what tools ? adv java ?
+webapp -> 
+1) IDE -> eclipse : enterprise app : JEE 
+2) java web server : [tomcat* , jboss,wildfly, glassfish , ] 
+3) database -> oracle : 'mysql' : postgres 
+
+------------------------------------
+
+webcontent / webapp  -> right click -> new HTML -> index.html 
+
+to run index.html => right click on index.html => run as -> run on server -> 
+	select tomcat -> finish 
+
+
+
+bin -> executable -> start / stop 
+
+
+-----------------------------------------------------
+class A extends Thread{
+	public void run(){
+	
+	}
+}
+---------------------------------
+class A implements Runnable {
+	public void run(){
+	
+	}
+}
+
+inheritance 
+overriding --> if a child create same method -- signature which is already created by parent
+
+overloading:--->
+can we have run method more than 1 time in a same class
+can i create a method more thant 1 time with same name in same class 
+
+  
+  
+src 
+main java 
+
+	com
+  		controller :logic 
+  		
+  		
+  	servlet-api.jar [zip file => classes ] 
+  	tomcat/lib 
+  	
+  	how to add servlet-api.jar --> 
+  			project -> right click->properties-> java buildpath -> libraries tab -> add external jar ->
+  			browser -> tomcat/lib -> servlet-api.jar -> open -> order and export -> select all => apply close 
+  			
+  			project -> right click->properties-> java buildpath -> libraries tab -> modules -> add external jar ->
+  			browser -> tomcat/lib -> servlet-api.jar -> open -> order and export -> select all => apply close 
+  			
+ 1) extends HttpServlet 
+ 2) override -> service method -> logic 
+ 3) servlet mapping -> web.xml
+  
+  
+  
