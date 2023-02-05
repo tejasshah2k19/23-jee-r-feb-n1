@@ -104,7 +104,17 @@ overloading:--->
 can we have run method more than 1 time in a same class
 can i create a method more thant 1 time with same name in same class 
 
-  
+
+
+
+
+
+
+Servlet---> class who extends HttpServlet -- is used to accept http request  in jee 
+
+http -> webapp
+ftp -> file data 
+smtp -> 
   
 src 
 main java 

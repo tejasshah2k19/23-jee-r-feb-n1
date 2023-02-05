@@ -1,0 +1,33 @@
+Signup.html 
+
+		fn 
+		em 
+		pwd 
+		gender : rb 
+		country : select 
+		hobby : cb 
+			submit 
+		
+--------------------------------------------
+	Cal.html 
+	No.1 [     ] 
+	No.2 [     ] 
+	
+	Add()  Sub(*)  Mul()  Div() 
+	
+	[submit] 
+	
+	
+	20 - 10 = 10 
+
+
+--------------------------------------------
+
+input -> firstName [ required ] 
+		 firstName [ regexp   ] az AZ
+		   
+		 email  required , regex
+		 
+		 password required, length , strong[regex] [azAZ09@#$&] 
+--------------------------------------------
+		 
