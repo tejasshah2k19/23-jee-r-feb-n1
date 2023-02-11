@@ -139,3 +139,24 @@ main java
   
   
   
+ MVC -> model view controller 
+ 
+ com ->
+ 		controller
+ 		dao
+ 		bean
+ 		util
+------------------------------------------- 		
+JSP -> java server pages | java servlet pages  
+
+	dynamic
+	server 
+	HTML + JAVA 
+ 		
+ 		
+ 		
+ 		
+  
+  
+  
+  

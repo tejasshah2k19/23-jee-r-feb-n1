@@ -30,4 +30,13 @@ input -> firstName [ required ]
 		 
 		 password required, length , strong[regex] [azAZ09@#$&] 
 --------------------------------------------
-		 
+
+
+
+
+
+		
+		
+		
+		
+		

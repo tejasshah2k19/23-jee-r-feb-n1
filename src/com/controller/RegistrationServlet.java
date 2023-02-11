@@ -1,18 +1,19 @@
 package com.controller;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.util.Validators;
 
-//servlet-api.jar --> 
-public class SignupServlet extends HttpServlet {
-	public void service(HttpServletRequest request, HttpServletResponse response) throws IOException {
-		System.out.println("SignupServlet::service()");
+public class RegistrationServlet extends HttpServlet {
+
+	protected void service(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 
 		String firstName = request.getParameter("firstName"); // blank
 		String email = request.getParameter("email");
@@ -46,21 +47,15 @@ public class SignupServlet extends HttpServlet {
 				errorMsg += "Please Enter ValidEmail<br>";
 			}
 		}
-
-		response.setContentType("text/html"); // MIME
-		// java html ->generate --> 1947
-		PrintWriter out = response.getWriter();
-		out.print("<html><body>");
-
+		RequestDispatcher rd = null;
 		if (isError == true) {
-			out.print(errorMsg);
+			// go back
+			rd = request.getRequestDispatcher("Registration.jsp");
+			//set error 
 		} else {
-			out.println("<br>FirstName => " + firstName);
-			out.println("<br>Email => " + email);
-			out.println("<br>Password => " + password);
+			rd = request.getRequestDispatcher("Login.jsp");
 
 		}
-
-		out.print("</body></html>");
+		rd.forward(request, response);
 	}
 }
