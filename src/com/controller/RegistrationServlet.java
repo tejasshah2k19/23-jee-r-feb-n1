@@ -14,7 +14,6 @@ public class RegistrationServlet extends HttpServlet {
 
 	protected void service(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-
 		String firstName = request.getParameter("firstName"); // blank
 		String email = request.getParameter("email");
 		String password = request.getParameter("password");
@@ -25,35 +24,36 @@ public class RegistrationServlet extends HttpServlet {
 
 		// validation
 		boolean isError = false;
-		String errorMsg = "";
 
 		if (Validators.isEmpty(firstName)) {
 			isError = true;
-			errorMsg = errorMsg + "Please Enter FirstName<br>";
+			request.setAttribute("firstNameError", "Please Enter FirstName");
 		} else {
 
 			if (Validators.isAlpha(firstName) == false) {
 				isError = true;
-				errorMsg = errorMsg + "Please Enter ValidName";
+				request.setAttribute("firstNameError", "Please Enter Valid FirstName");
 			}
 		}
 		if (Validators.isEmpty(email)) {
 			isError = true;
-			errorMsg = errorMsg + "Please Enter Email<br>";
+			request.setAttribute("emailError", "Please Enter Email");
 		} else {
 			String emailRegex = "[0-9a-zA-Z]+[@][a-zA-Z]+[\\.][a-zA-Z]{2,3}";
 			if (email.matches(emailRegex) == false) {
 				isError = true;
-				errorMsg += "Please Enter ValidEmail<br>";
+				request.setAttribute("emailError", "Please Enter Valid Email");
+
 			}
 		}
+
 		RequestDispatcher rd = null;
 		if (isError == true) {
 			// go back
 			rd = request.getRequestDispatcher("Registration.jsp");
-			//set error 
+			// set error
 		} else {
-			rd = request.getRequestDispatcher("Login.jsp");
+			rd = request.getRequestDispatcher("Home.jsp");
 
 		}
 		rd.forward(request, response);
