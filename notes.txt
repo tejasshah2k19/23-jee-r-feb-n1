@@ -152,7 +152,41 @@ JSP -> java server pages | java servlet pages
 	dynamic
 	server 
 	HTML + JAVA 
- 		
+----------------------------------------------
+filter -- pre process 
+
+ 
+		jsp input --> submit --> server 
+				servlet --> process 
+				
+		bank -> login.jsp -> submit -> server 
+					servlet --> process 
+					
+					
+water --> filter -> 
+
+whatsapp -> image 35 mb send --> |compress|--> server ? --> 
+ 					
+filter? 
+		bank -> login.jsp -> submit -> server
+				filter1? filter2? --> servlet  
+ 					
+ 					
+---> FirstName Email 
+	Booking.jsp 	BookingFilter	--> BookingServlet  					
+					validation 				
+					
+
+1) class -> implements Filter 
+2) doFilter
+3) filter mapping - web.xml 
+					
+					
+					
+					
+					
+					
+					
  		
  		
  		
