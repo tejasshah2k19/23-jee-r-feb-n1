@@ -55,4 +55,15 @@
 		<url-pattern>/AddBookingServlet</url-pattern>
 	</filter-mapping>
 
+
+	<filter>
+		<filter-name>BookingFilterAlpha</filter-name>
+		<filter-class>com.filter.BookingFilterAlpha</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>BookingFilterAlpha</filter-name>
+		<url-pattern>/AddBookingServlet</url-pattern>
+	</filter-mapping>
+
+
 </web-app>
