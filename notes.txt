@@ -183,11 +183,55 @@ filter?
 					
 					
 					
-					
+---------------
+collection is a java framework / topic 
+
+Collection --> interface 
+Collections -> class 
+
+
+
+large data -- objects -- record 
+
+manage -- collection 
+
+
+					Collection(I)
+	List(I)		Queue	(I)	Set(I)		|		Map(I)
+	ArrayList	PriorityQ	HashSet				HashMap
+	Vector 				TreeSet								
 					
 					
 					
  		
+ ----------------------------------
+ MVC 
+
+
+
+Signup.jsp	
+	firstName
+	email
+	password 
+		submit 
+
+
+server 
+
+
+controller --- servlet
+
+	input read 
+	validate 
+	tmp->fn em pwd [ bean ] 
+	db insert 
+	
+
+dao --- database --> data access object  
+
+
+jsp -> controller -> bean -> dao -> database 
+database -> dao -> bean -> controller -> jsp 
  		
  		
   

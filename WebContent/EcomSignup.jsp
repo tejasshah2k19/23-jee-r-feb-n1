@@ -25,5 +25,11 @@
 		<button type="submit">Signup</button>
 
 	</form>
+<br><br>
+	<a href="EcomListUserServlet">List User</a>
+	<br><br>
+	<a href="Login.jsp">Login</a>
+	
+	
 </body>
 </html>

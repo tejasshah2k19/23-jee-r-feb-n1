@@ -13,4 +13,19 @@ public class UserDao {
 		// db insert
 		users.add(userBean);
 	}
+
+	public ArrayList<UserBean> getAllUsers() {
+		return users;
+	}
+	
+	public UserBean login(String email,String password) {
+		
+		for(UserBean user:users) {
+			if(user.getEmail().equals(email) && user.getPassword().equals(password)) {
+				return user;
+			}
+
+		}
+		return null;
+	}
 }
