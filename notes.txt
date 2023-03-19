@@ -234,7 +234,20 @@ jsp -> controller -> bean -> dao -> database
 database -> dao -> bean -> controller -> jsp 
  		
  		
-  
+ <a href="DeleteUserServlet?email=XXXX">Delete</a>
+ QueryString --> jsp data servlet 
+ 
+ DeleteUserServlet?email=xxx&name=yyy&age=90
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
   
   
   

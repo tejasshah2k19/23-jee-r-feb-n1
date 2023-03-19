@@ -18,7 +18,7 @@ public class EcomListUserServlet extends HttpServlet {
 
 		UserDao userDao = new UserDao();
 
-		ArrayList<UserBean> users = userDao.getAllUsers();
+		ArrayList<UserBean> users = userDao.getAllUsers();//1 2 
 		request.setAttribute("users", users);
 
 		RequestDispatcher rd = request.getRequestDispatcher("EcomListUser.jsp");

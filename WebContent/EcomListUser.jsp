@@ -22,6 +22,7 @@
 		<th>FirstName</th>
 		<th>Email</th>
 		<th>Password</th>
+		<th>Action</th>
 	</tr>
 
 	<%for(UserBean user:users ){ %>
@@ -29,6 +30,7 @@
 			<td><%=user.getFirstName() %> </td>
 			<td><%=user.getEmail() %></td>
 			<td><%=user.getPassword()  %></td>
+			<td><a href="DeleteUserServlet?email=<%=user.getEmail()%>">Delete</a></td>
 		</tr>
 	<%} %>
 

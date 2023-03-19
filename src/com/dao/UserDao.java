@@ -28,4 +28,31 @@ public class UserDao {
 		}
 		return null;
 	}
+
+	public void deleteUser(String email) {
+		int i;//noMatch
+		for (i=0;i<users.size();i++)//5[ 0 1 2 3 4]
+		{
+			 
+			if(users.get(i).getEmail().equals(email)) {
+				users.remove(i);
+				break;
+			}
+
+		}
+	}
+
+
+	 
+
 }
+
+
+
+
+
+
+
+
+
+
