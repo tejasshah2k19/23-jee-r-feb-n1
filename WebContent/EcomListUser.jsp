@@ -30,7 +30,9 @@
 			<td><%=user.getFirstName() %> </td>
 			<td><%=user.getEmail() %></td>
 			<td><%=user.getPassword()  %></td>
-			<td><a href="DeleteUserServlet?email=<%=user.getEmail()%>">Delete</a></td>
+			<td><a href="DeleteUserServlet?email=<%=user.getEmail()%>">Delete</a>
+				<a href="ViewUserServlet?email=<%=user.getEmail()%>">View</a>
+			</td>
 		</tr>
 	<%} %>
 

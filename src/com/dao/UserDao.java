@@ -43,7 +43,16 @@ public class UserDao {
 	}
 
 
-	 
+	public UserBean getUserDetailByEmail(String email) {
+		
+		for(UserBean user:users) {
+			if(user.getEmail().equals(email)) {
+				return user;
+			}
+
+		}
+		return null;
+	}	 
 
 }
 
