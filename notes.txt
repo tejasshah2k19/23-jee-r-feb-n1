@@ -239,7 +239,12 @@ database -> dao -> bean -> controller -> jsp
  
  DeleteUserServlet?email=xxx&name=yyy&age=90
  
- 
+-----------------------------------------------------------
+
+1) class implements XXXX Logic
+2) web.xml -> listener map  
+
+
  
  
  

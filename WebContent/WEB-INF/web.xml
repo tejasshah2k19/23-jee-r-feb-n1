@@ -89,4 +89,9 @@
     <servlet-name>ViewUserServlet</servlet-name>
     <url-pattern>/ViewUserServlet</url-pattern>
   </servlet-mapping>
+  
+  <listener>
+  	<listener-class>com.listener.ServerEventListener</listener-class>
+  </listener>
+  
 </web-app>

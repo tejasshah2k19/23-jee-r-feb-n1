@@ -6,7 +6,7 @@ public class UserBean {
 	private String firstName;
 	private String email;
 	private String password;
-	private Integer role;
+	private Integer role;//1 user  2 admin 
 
 	public Integer getUserId() {
 		return userId;

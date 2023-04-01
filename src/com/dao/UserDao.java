@@ -7,7 +7,18 @@ import com.bean.UserBean;
 public class UserDao {
 
 	static ArrayList<UserBean> users = new ArrayList<UserBean>();
+	
+	//userBean -> users -> add 
+	//server start -> activity  -> users[1,2,3,4,5]  
+	
+	//server stop -> activity -> user[] -> 
 
+	//event --> action 
+	
+	//login logout 
+	
+	//Listener --> listen event  -> activity 
+	
 	public void addUser(UserBean userBean) {
 
 		// db insert
