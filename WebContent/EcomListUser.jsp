@@ -14,8 +14,9 @@
 	ArrayList<UserBean> users = (ArrayList<UserBean>)request.getAttribute("users");
 %>
 
-
-
+Welcome ...
+${cookie.firstName.value}
+<br>
 
 <table border="1">
 	<tr>

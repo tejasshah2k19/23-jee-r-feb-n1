@@ -244,7 +244,23 @@ database -> dao -> bean -> controller -> jsp
 1) class implements XXXX Logic
 2) web.xml -> listener map  
 
+-------------------------------------------------
 
+server -> localhost -> 
+		chrome  1 user  ---> session created
+		firefox 2 user  ---> session created 
+		i       3 user  ---> session created 
+		
+		
+		totalOnlineUser -> 3 
+		event ->> session created 
+		
+-------------------------------------------------
+jee --> webapp --> 
+		user info -> 1) cookie  : web-browser --> 
+					 2) session : server --> secure 
+					  		 
+		
  
  
  

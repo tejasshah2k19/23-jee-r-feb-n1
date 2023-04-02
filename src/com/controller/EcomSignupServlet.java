@@ -38,6 +38,8 @@ public class EcomSignupServlet extends HttpServlet {
 		
 		//userDao.addUser(fn,ln,em,pwd);
 		
+		//cookie 
+		
 		RequestDispatcher rd = request.getRequestDispatcher("EcomSignup.jsp");
 		rd.forward(request, response);
 	}

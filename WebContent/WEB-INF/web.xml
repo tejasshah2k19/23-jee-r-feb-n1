@@ -93,5 +93,18 @@
   <listener>
   	<listener-class>com.listener.ServerEventListener</listener-class>
   </listener>
-  
+  <listener>
+   	<listener-class>com.listener.UserCounterListener</listener-class>
+  </listener> 
 </web-app>
+
+
+
+
+
+
+
+
+
+
+

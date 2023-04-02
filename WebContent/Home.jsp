@@ -7,6 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h2>Welcome...</h2>
+<h2>Welcome...${cookie.firstName.value}</h2>
+
+<a href="EcomListUserServlet">List</a><br>
 </body>
 </html>
