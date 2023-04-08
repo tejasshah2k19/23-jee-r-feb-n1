@@ -89,22 +89,25 @@
     <servlet-name>ViewUserServlet</servlet-name>
     <url-pattern>/ViewUserServlet</url-pattern>
   </servlet-mapping>
-  
   <listener>
-  	<listener-class>com.listener.ServerEventListener</listener-class>
+    <listener-class>com.listener.ServerEventListener</listener-class>
   </listener>
   <listener>
-   	<listener-class>com.listener.UserCounterListener</listener-class>
-  </listener> 
+    <listener-class>com.listener.UserCounterListener</listener-class>
+  </listener>
+  <servlet>
+    <description></description>
+    <display-name>LogoutServlet</display-name>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>com.controller.LogoutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LogoutServlet</servlet-name>
+    <url-pattern>/LogoutServlet</url-pattern>
+  </servlet-mapping>
+  
+  <session-config>
+  	<session-timeout>5</session-timeout>
+  </session-config>
+  
 </web-app>
-
-
-
-
-
-
-
-
-
-
-

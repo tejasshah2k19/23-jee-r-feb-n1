@@ -8,7 +8,11 @@
 </head>
 <body>
 <h2>Welcome...${cookie.firstName.value}</h2>
-
+<br>
+Email => ${email}<br><BR>
+Email => ${sessionScope.email } 
 <a href="EcomListUserServlet">List</a><br>
+
+<a href="LogoutServlet">Logout</a>
 </body>
 </html>

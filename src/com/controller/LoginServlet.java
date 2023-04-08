@@ -8,6 +8,7 @@ import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import com.bean.UserBean;
 import com.dao.UserDao;
@@ -29,9 +30,16 @@ public class LoginServlet extends HttpServlet {
 			//correct
 			
 			Cookie c = new Cookie("firstName", user.getFirstName());
-			c.setMaxAge(60*60*24*7);
+			c.setMaxAge(60*60*24*7); //after 7 days cookie will expired 
 			response.addCookie(c);
 			
+			//1st request -> server -> check no -> memory  -> session -> 12515365 
+			//client ->browser ->cookie -> JSESSIONID 
+			//2nd request -> server -> check yes -> no create [use]
+			
+			HttpSession session = request.getSession(); //new | old 
+			session.setAttribute("email",user.getEmail());
+			session.setMaxInactiveInterval(60*5);//seconds 
 			RequestDispatcher rd = request.getRequestDispatcher("Home.jsp"); 
 			rd.forward(request, response);
 		}
