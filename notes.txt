@@ -260,12 +260,86 @@ jee --> webapp -->
 		user info -> 1) cookie  : web-browser --> 
 					 2) session : server --> secure 
 					  		 
+------------------------------
+
+servletlifecycle 
+
+LoginServlet 
+1) load class 
+2) create instance   -- thread
+3)init() : api --> 1 
+4)service() [doGet,doPost] --> 500  
+5)destroy() : api --> 1 [ server shutdown ]  
+ 
+------------------------------
+ jsp --> servlet [.java -- .class ] 
+ 
+1) translation  [ .jsp --> .java ]
+2) compilation  [ .java ---> .class ]  
+3) load class 
+4) create instance   -- thread
+5) jspInit() : api --> 1 
+6) _jspService() [doGet,doPost] --> 500  
+7) jspDestroy() : api --> 1 [ server shutdown ]  
+ 
+ 
+A.jsp
+
+		<body>
+		Hi 
+		<% int a= 90;%> 
+		<%=a%> 
+		<%!
+			void add(){
+				
+			}
+		%>
+		</body>
 		
- 
- 
- 
- 
- 
+A.java
+
+
+void add(){
+
+}
+
+_jspService(){
+	out.print("<Body>");
+	out.print("Hi");
+	int a = 90;
+	out.print(a);
+
+			
+	out.print("</body>");
+}
+----------------------------------------------------
+
+ALogin.jsp 
+ 		email 
+ 		password
+ 				submit 
+ 				
+ALoginServlet 
+	email -> admin@gmail.com
+	password ->admin123 
+	
+	true AHome.jsp 
+	false ALogin.jsp => error message 
+	
+	
+how to set data for particular servlet 
+data ->web.xml 
+-> init parameter 	
+----------------------------------------------------
+				
+			
+
+
+
+
+
+
+
  
  
  
