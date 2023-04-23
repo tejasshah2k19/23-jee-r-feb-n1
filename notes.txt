@@ -342,7 +342,34 @@ jsp-api.jar -> tomcat lib
 
 
 
+page
+request 
+response 
+session
+application 
+out 
+config 
+pageContext 
 
+exception  	
+
+jstl 
+
+ 
+javaEE
+	jstl
+		core 
+		sql
+		format
+		xml
+		function 
+
+
+.jar
+
+
+custom tag
+<greet/>
 
 
 
