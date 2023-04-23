@@ -331,7 +331,13 @@ how to set data for particular servlet
 data ->web.xml 
 -> init parameter 	
 ----------------------------------------------------
-				
+jsp-api.jar -> tomcat lib 
+
+1) class extends SimpleTagSupport -  doTag logic 
+2) .tld -> tag information
+3) web.xml mapping 
+4) import jsp use 
+  				
 			
 
 

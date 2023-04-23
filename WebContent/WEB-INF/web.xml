@@ -150,5 +150,10 @@
 		<param-value>AdvJava</param-value>
 	</context-param>
 
-
+	<jsp-config>
+		<taglib>
+			<taglib-uri>www.royal.com/stag</taglib-uri>
+			<taglib-location>/WEB-INF/stag.tld</taglib-location>
+		</taglib>
+	</jsp-config>
 </web-app>
