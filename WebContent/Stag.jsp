@@ -12,6 +12,9 @@
 
 <s:greet></s:greet><br>
 <s:sqr num="8"/><br>
+
+<c:sqr num="10"/><br>
+
 <c:greet/><br>
 
 hi 

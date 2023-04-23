@@ -7,4 +7,15 @@
 		<tag-class>com.ctag.GreetTag</tag-class>
 		<body-content>empty</body-content>
 	</tag>
+	
+	<tag>
+		<name>sqr</name>
+		<tag-class>com.ctag.SqrTag</tag-class>
+		<body-content>empty</body-content>
+		<attribute>
+			<name>num</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
 </taglib>
